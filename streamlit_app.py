@@ -13,3 +13,5 @@ import pandas as pd
 mfl = pd.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 
 streamlit.dataframe(mfl) 
+
+streamlit.multiselect("Pick some fruits:", list(mfl.index))
