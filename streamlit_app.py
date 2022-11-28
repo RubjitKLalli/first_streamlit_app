@@ -18,4 +18,4 @@ mfl = mfl.set_index('Fruit')
 
 streamlit.multiselect("Pick some fruits:", list(mfl.index))
 
-
+streamlit.dataframe(mfl) 
