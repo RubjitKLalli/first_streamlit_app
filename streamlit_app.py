@@ -51,7 +51,7 @@ add_my_Fruit = streamlit.text_input('What fruit would you like to add?')
 
 add_my_Fruit_text = streamlit.text(add_my_Fruit)
 
-pd.dataframe(add_my_Fruit_text)
+streamlit.dataframe(add_my_Fruit_text)
 
 
 
