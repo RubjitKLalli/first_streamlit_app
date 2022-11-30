@@ -17,3 +17,7 @@ mfl = mfl.set_index('Fruit')
 fs = streamlit.multiselect("Pick some fruits:", list(mfl.index),['Strawberries','Avocado'])
 fts = mfl.loc[fs]
 streamlit.dataframe(fts) 
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
