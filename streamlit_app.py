@@ -51,7 +51,7 @@ my_df = pd.DataFrame(my_data_rows)
 
 add_my_Fruit = streamlit.text_input('What fruit would you like to add?')
 
-my_df.apend(add_my_fruit)
+my_df.append(add_my_Fruit)
 
 
 
