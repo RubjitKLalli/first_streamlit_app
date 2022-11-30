@@ -43,7 +43,7 @@ my_data_row = my_cur.fetchone()
 streamlit.header("Hello from Snowflake:")
 streamlit.dataframe(my_data_row)
 
-my_cur.execute("select * from fruit_load_list")
+my_cur.execute("select * from fruitloadlist")
 my_data_rows = my_cur.fetchall()
 streamlit.head("the fruit load list contains:")
 streamlit.dataframe(my_data_rows)
