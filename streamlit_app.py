@@ -48,8 +48,6 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("the fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-add_my_Fruit = str(streamlit.text_input('What fruit would you like to add?'))
-add_my_Fruit = streamlit.dataframe(add_my_Fruit)
-df = pd.concat([my_data_row,add_my_Fruit],ignore_index=True)
+add_my_Fruit = streamlit.text_input('What fruit would you like to add?')
+streamlit.dataframe(add_my_Fruit)
 
-df
